@@ -1,0 +1,35 @@
+.contact-container{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(212,247,255);
+    background: linear-gradient(180deg, rgba(212,247,255,1) 9%, rgba(255,232,206,1) 57%);
+    
+}
+.contact-container h2{
+    margin-top: 0 !important;
+    font-family: 'Raleway', sans-serif;
+}
+.contact-methods{
+    display: flex;
+    justify-content: center;
+    
+    width: 90%;
+    justify-content: space-around;
+   
+}
+
+.contact img{
+    width: 30%;
+}
+.contact h3{
+    font-size: 12px;
+
+}
+a{
+    text-decoration: none !important;
+
+}
