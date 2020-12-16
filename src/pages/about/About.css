@@ -35,13 +35,7 @@ background: linear-gradient(180deg, rgba(212,247,255,1) 9%, rgba(255,232,206,1) 
     
 }
 .description{
-    /* width: 60%;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; */
-    /* width: 80%; */
+   
 width: 90%;
 margin-bottom: 0;
 

@@ -1,32 +1,53 @@
-import React from 'react'
-import './Projects.css'
-import Brewdog from './assets/brewdog.jpg'
-import SIO from './assets/Logo.png'
-import {motion} from "framer-motion"
+import React from "react";
+import "./Projects.css";
+import Brewdog from "./assets/brewdog.jpg";
+import BrewdogHome from "./assets/Paw-landing.png";
+import SIO from "./assets/Logo.png";
+import SIOHome from "./assets/Stretch-home.png";
+import { motion } from "framer-motion";
 
 const Projects = () => {
+  const sites = [
+    {
+      title: "Stretch It Out",
+      logo: SIO,
+      image: SIOHome,
+      link: "http://stretch-it-out.herokuapp.com/",
+      alt: "Stretch It Out app"
+    },
+    {
+      title: "PAWUADRINK",
+      logo: Brewdog,
+      image: BrewdogHome,
+      link: "http://paw-u-a-drink.herokuapp.com/",
+      alt: "PAWUADRINK app"
+    },
+    
 
-    const sites = [
-        {title: 'Stretch It Out',
-        image: SIO,
-        
-    }
-    ]
-    return (
-        <div className="projects-container">
-            <h1 className="project-header">Some Projects I've Worked On:</h1>
-            <div className="projects">
-            <h2>Stretch It Out</h2>
-               <motion.div whileHover={{scale:1.1}} whileTap={{scale:0.9}} transition={{duration: .7}}><img src={SIO}/></motion.div>
-                <h3>Learn new stretches and track your flexibility</h3>
-                <h2>PAWUADRINK</h2>
-                <motion.div whileHover={{scale:1.1}} whileTap={{scale:0.9}} transition={{duration: .7}}><img className="brewdog"src={Brewdog}/></motion.div>
-                <h3>Get brewer-level stats on your favorite beers</h3>
-               
-
+  ];
+  return (
+    <section className="projects-container">
+      <h2 className="project-header">Some Projects I've Worked On:</h2>
+      <div className="project-list">
+        {sites.map((site, index) => (
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="image-container">
+              <img src={site.logo} />
+              <a href={site.link} target="_blank" rel="noreferrer">
+                <img className="transition-image" src={site.image} alt={site.alt}/>
+              </a>
+              <h3>{site.title}</h3>
             </div>
-        </div>
-    )
-}
+          </motion.div>
+        ))}
+      </div>
+      
+    </section>
+  );
+};
 
-export default Projects
+export default Projects;
