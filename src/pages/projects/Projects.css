@@ -9,28 +9,44 @@ background: linear-gradient(353deg, rgba(212,247,255,1) 9%, rgba(255,232,206,1) 
 margin-top: 0;
 }
 .project-header{
-
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
     font-size: 20px;
     margin-top: 0 !important;
 }
-.projects{
+.project-list{
+    height: 90%;
     width: 90%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-}
-.projects h2{
-    font-family: 'Raleway', sans-serif;
-    font-size: 25px;
 
 }
-.projects h3{
-    font-size: 15px;
-    width: 90%;
-    font-family: 'Raleway', sans-serif;
 
-}
-.brewdog{
+.image-container{
+    background-color: white;
     border-radius: 15px;
-    width: 50%;
+    padding: 20px;
+    position: relative;
 }
+.image-container img{
+    width: 100%;
+    height: 100%;
+}
+.image-container h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.transition-image{
+    position: absolute;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.transition-image:hover{
+    opacity: 1;
+}
+

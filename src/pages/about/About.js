@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import './About.css'
 import Typed from 'typed.js';
 import Headshot from './assets/headshot2.jpeg';
-import ClarinetHeadshot from './assets/clarinet-headshot.jpeg'
+
 
 
 const About = () => {
