@@ -10,6 +10,7 @@ function App() {
      <Landing/>
      <About/>
      <Projects/>
+     <Contact/>
     </div>
   );
 }
