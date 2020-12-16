@@ -6,7 +6,7 @@ const Landing = () => {
      
         <div className="container">
           <Fade top>
-          <h1>Hi, I'm Eric</h1>
+          <h1>Hi, I'm Eric </h1>
           </Fade>
        
         </div>
