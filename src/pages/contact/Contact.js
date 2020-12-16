@@ -27,6 +27,8 @@ link: "mailto:ericshuanders@gmail.com" },
   return (
     <div className="contact-container">
       <Jump><h2>Let's stay in touch!</h2></Jump>
+      <h4>Eric Anderson | ericshuanders@gmail.com</h4>
+      
       <div className="contact-methods">
         {icons.map((icon, index) => (
           <a href={icon.link} target="_blank" rel="noreferrer">
