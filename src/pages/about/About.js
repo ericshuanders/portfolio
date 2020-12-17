@@ -43,15 +43,16 @@ const About = () => {
           <img className="headshot" src={Headshot} />
         </div>
 
-        <div className="description">
-          <h3>
-            I used to spend all day playing in orchestras and teaching <span className="clarinet"><a href="http://ericandersonclarinet.com" target="_blank" rel="noreferrer"> clarinet</a></span>.
+        {/* <div className="description"> */}
+          <div className="desc-text">
+          <h3 >
+            I used to spend all day<span className="clarinet"><a href="http://ericandersonclarinet.com" target="_blank" rel="noreferrer"> playing and teaching clarinet</a></span>.
           </h3>
-          <h3>
-            {" "}
+          <h3 >
             Now, I spend my time building applications with alluring and
             intuitive user experiences. Some of my favorite languages and frameworks include:
           </h3>
+          </div>
             <Fade left cascade>
           <div className="code-group">
             {codes.map((code) => (
@@ -62,7 +63,7 @@ const About = () => {
             ))}
           </div>
           </Fade>
-        </div>
+        {/* </div> */}
         
       </div>
     </section>
