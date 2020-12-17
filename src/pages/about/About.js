@@ -43,7 +43,7 @@ const About = () => {
           <img className="headshot" src={Headshot} />
         </div>
 
-        {/* <div className="description"> */}
+      
           <div className="desc-text">
           <h3 >
             I used to spend all day<span className="clarinet"><a href="http://ericandersonclarinet.com" target="_blank" rel="noreferrer"> playing and teaching clarinet</a></span>.
@@ -63,7 +63,7 @@ const About = () => {
             ))}
           </div>
           </Fade>
-        {/* </div> */}
+        
         
       </div>
     </section>
