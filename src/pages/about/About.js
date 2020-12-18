@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { forwardRef, useEffect } from "react";
 import "./About.css";
 import Typed from "typed.js";
 import Fade from 'react-reveal/Fade'
@@ -9,7 +9,7 @@ import CSS from "./assets/css.png";
 import Reactjs from "./assets/react.png";
 import Node from "./assets/nodejs.png";
 
-const About = () => {
+const About = forwardRef((props, ref) => {
   useEffect(() => {
     const options = {
       strings: [
@@ -33,7 +33,7 @@ const About = () => {
   ];
 
   return (
-    <section className="about-container">
+    <section  ref = {ref} className="about-container">
       <h2>What gets me up in the morning?</h2>
       <h2>
         <span className="string" />
@@ -55,8 +55,8 @@ const About = () => {
           </div>
             <Fade left cascade>
           <div className="code-group">
-            {codes.map((code) => (
-              <div className="code">
+            {codes.map((code, index) => (
+              <div key = {index} className="code">
                 <img src={code.image} alt={code.alt} />
                 <p>{code.name}</p>
               </div>
@@ -68,6 +68,6 @@ const About = () => {
       </div>
     </section>
   );
-};
+});
 
 export default About;

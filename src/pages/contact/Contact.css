@@ -11,28 +11,33 @@
 .contact-container h2{
     margin-top: 0 !important;
     font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
+    color:  #393e46
 }
 .contact-methods{
     display: flex;
     justify-content: center;
-    
     width: 90%;
     justify-content: space-around;
+    padding-bottom: 3%;
    
 }
 
 .contact img{
     width: 30%;
+    padding: none;
 }
+
 .contact h3{
     font-size: 12px;
     font-family: 'Raleway', sans-serif;
+    color: #393e46
 
 }
+
 .contact-container h4{
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 
 }
 a{

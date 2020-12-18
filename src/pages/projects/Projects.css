@@ -10,9 +10,10 @@ background: linear-gradient(353deg, rgba(212,247,255,1) 9%, rgba(255,232,206,1) 
 }
 .project-header{
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     margin-top: 0 !important;
+    color: #393e46
 }
 .project-list{
     height: 90%;
@@ -46,7 +47,7 @@ background: linear-gradient(353deg, rgba(212,247,255,1) 9%, rgba(255,232,206,1) 
 }
 .image-container h3{
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 .transition-image{
     position: absolute;
@@ -59,7 +60,7 @@ background: linear-gradient(353deg, rgba(212,247,255,1) 9%, rgba(255,232,206,1) 
 .transition-image:hover{
     opacity: 1;
 }
-projects-container h2 {font-weight: 500;}
+
 
 @media only screen and (min-width: 768px) and (min-height: 1024px) {
 
@@ -85,7 +86,7 @@ projects-container h2 {font-weight: 500;}
     .image-container h3{
         font-size: 30px;
     }
-}@media only screen and (min-width: 1200px){
+}@media only screen and (min-width: 768px){
     .projects-container h2{
         font-size: 30px;
        

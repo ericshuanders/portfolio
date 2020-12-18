@@ -10,16 +10,16 @@ import Jump from 'react-reveal/Jump'
 const Contact = () => {
   const icons = [
     {
-      name: "Linkedin",
+     
       src: Linkedin,
       link: "http://linkedin.com/in/eric-shu-anderson",
     },
     {
-      name: "Github",
+      
       src: Github,
       link: "http://github.com/ericshuanders",
     },
-    { name: "Email", src: Mail,
+    {  src: Mail,
 link: "mailto:ericshuanders@gmail.com" },
     { name: "Resume", src: Resume, link: ResumePDF},
   ];
@@ -31,11 +31,11 @@ link: "mailto:ericshuanders@gmail.com" },
       
       <div className="contact-methods">
         {icons.map((icon, index) => (
-          <a href={icon.link} target="_blank" rel="noreferrer">
+          <a key = {index} href={icon.link} target="_blank" rel="noreferrer">
             
             <div className="contact">
               <img src={icon.src} />
-              <h3>{icon.name}</h3>
+              
             </div>
           </a>
         ))}

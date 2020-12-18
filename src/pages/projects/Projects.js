@@ -35,7 +35,7 @@ const Projects = () => {
             whileTap={{ scale: 0.9 }}
             transition={{ duration: 0.7 }}
           >
-            <div className="image-container">
+            <div key = {index} className="image-container">
               <img src={site.logo} />
               <a href={site.link} target="_blank" rel="noreferrer">
                 <img className="transition-image" src={site.image} alt={site.alt}/>
