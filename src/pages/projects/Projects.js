@@ -12,7 +12,7 @@ const Projects = () => {
       title: "Stretch It Out",
       logo: SIO,
       image: SIOHome,
-      link: "http://stretch-it-out.herokuapp.com/",
+      link: "http://stretch-it-out.com/",
       alt: "Stretch It Out app"
     },
     {
