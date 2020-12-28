@@ -12,14 +12,14 @@ const Projects = () => {
       title: "Stretch It Out",
       logo: SIO,
       image: SIOHome,
-      link: "http://stretch-it-out.com/",
+      link: "https://stretchitout.herokuapp.com/",
       alt: "Stretch It Out app"
     },
     {
       title: "PAWUADRINK",
       logo: Brewdog,
       image: BrewdogHome,
-      link: "http://paw-u-a-drink.herokuapp.com/",
+      link: "https://paw-u-a-drink.herokuapp.com/",
       alt: "PAWUADRINK app"
     },
     
